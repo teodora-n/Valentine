@@ -1,0 +1,165 @@
+/*---------------------CSS RESET------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------DEMO CSS------------------*/
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after {display: table;  content: ''; }
+.clearfix:after { clear: both; }
+
+body{
+	font-family: 'Domine', serif;
+	font-size:16px;
+	color:#787878;
+	line-height:1.5;
+	overflow-x:hidden;
+	background:#222;
+}
+.wrapper{
+	display: flex; 
+	position:relative;
+	min-height:100vh;
+	height:100vh;
+	z-index:9;
+	width:100%;
+	margin:auto;
+	padding:20vh 2em;
+	text-align:center;
+	color:#ccc;
+}
+h1, h2{
+	font-size:3em;
+	font-weight:normal;
+	color:#ccc;
+	margin-bottom:1em;
+}
+h2{
+	font-size:2em;
+}
+p{
+	font-size:1em;
+	margin-bottom:2.5em;
+}
+
+/*---------------------VALENTINE CSS------------------*/
+
+#svgWrap{
+	position:relative;
+	width:100%;
+	max-width:500px;
+	margin:auto;
+}
+#valentineBirds{
+	stroke-dashoffset:600;
+	stroke-dasharray:600;
+}
+#valentineBirds, #valentineBirdsColour{
+	width:100%;
+	min-width:100%;
+	max-width:500px;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:9;
+}
+#valentineBirdsColour, .birdsStars, second{
+	opacity:0;
+}
+#sendTweet{
+	display:none;
+	margin:auto;
+	max-width:800px;
+	background:rgba(34,34,34,1);
+	z-index:9;
+	position:relative;
+	padding:4em;
+}
+input{
+	background:none;
+	outline:none;
+	border:none;
+	border-bottom:1px solid #666;
+	font-family: 'Domine', serif;
+	font-size:1em;
+	max-width:90%;
+	color:#BF406A;
+}
+input:focus{
+	background:none;
+}
+#submit{
+	cursor:pointer;
+	color:#222;
+	text-decoration:none;
+	display:inline-block;
+	border-radius:50%;
+	width:50px;
+	height:50px;
+	font-size:26px;
+	font-weight:700;
+	padding-top:3px;
+	background:#CE4A70;
+}
+#msg{
+	display:none;
+}
+
+@media (max-width: 768px) {
+	h1{
+		font-size:2em;
+	}
+	h2{
+		font-size:1.3em;
+	}
+}
+@media (max-width: 570px) {
+	#submit{
+		margin-top:1em;
+	}
+}
